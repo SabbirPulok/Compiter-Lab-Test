@@ -1,0 +1,34 @@
+Dump of assembler code for function main:
+0x00401460 <+0>:
+0x00401461 <+1>:
+0x00401463 <+3>:
+0x00401466 <+6>:
+0x00401469 <+9>:
+0x0040146e <+14>:
+0x00401476 <+22>:
+0x0040147e <+30>:
+0x00401486 <+38>:
+0x0040148a <+42>:
+push   %ebp 
+mov    %esp,%ebp
+and    $0xfffffff0,%esp
+sub    $0x10,%esp
+call   0x4019e0 <__main>
+movl   $0x2,0xc(%esp) // puts the value 2 on the stack pointer(SP+12)  
+movl   $0x2c,0x8(%esp) // puts the value 2C(44) of address 0x2c on the stack pointer(SP+8)
+movl   $0x242,0x4(%esp) // puts the value 242 on the stack pointer(SP+4)
+mov    0x8(%esp),%eax // puts the value of stack pointer(SP+4) into eax
+imul   0x4(%esp),%eax // multiply eax with SP+4 content and puts the value into eax
+mov    %eax,%edx // move from the value of eax to edx
+mov    0xc(%esp),%eax // move the value of eax to SP+12
+add    %edx,%eax // add eax+edx 
+mov    %eax,(%esp)
+/
+=> 0x0040148f <+47>:
+   0x00401491 <+49>:
+   0x00401495 <+53>:
+   0x00401497 <+55>:
+   0x0040149a <+58>:
+   0x0040149f <+63>:    leave
+   0x004014a0 <+64>:    ret
+   End of assembler dump.
