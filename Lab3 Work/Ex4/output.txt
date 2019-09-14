@@ -1,0 +1,24 @@
+SUB Sub
+ID ExampleProg
+DIM Dim
+ID b
+AS as
+BOOLEAN Boolean
+ID b
+ASSIGN =
+TRUE True
+DIM Dim
+ID s
+AS as
+STRING String
+ID s
+ASSIGN =
+LITERAL "Truth value of Bool is"
+AND &
+ID b
+MSGBOX MsgBox
+LP (
+ID s
+RP )
+END End
+SUB Sub

@@ -1,0 +1,7 @@
+movl $0x2, 0x4(%esp) 
+means to take the current value of the stack pointer (%esp), add 4 (0x4) then store the long (32-bit) value 0x2 into that location.
+
+mov 0x8(%esp), %eax 
+means move the current value of the stack pointer (%esp) 8 (0x8) to eax register
+
+
